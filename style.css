@@ -258,3 +258,63 @@
     font-size:13px;
      margin-top:8px; 
     }
+
+    
+/*----------------------------------TYPING-ANIMATION----------------------------------*/
+.wrapper{
+    display:flex;
+}
+.wrapper .static-txt{
+    font-size:2.5rem;
+    font-weight:600;
+}
+
+.wrapper .dynamic-txts{
+    margin-left:15px;
+    line-height:50px;
+    height:50px;
+    overflow:hidden;
+}
+
+.dynamic-txts{
+    padding-left:0px;
+}
+
+.dynamic-txts li{
+    list-style: none;
+    color:#f90202;
+    font-size:2.5rem;
+    font-weight:600;
+    position:relative;
+    top:0;
+    animation:slide 18s steps(6) infinite;
+}
+
+@keyframes slide{
+    100%{
+        top:-300px;
+    }
+}
+
+
+.dynamic-txts li::after{
+    content:"";
+    position:absolute;
+    left:0;
+    height:50px;
+    width: 100%;
+    border-left:2px solid #8fb74b;
+    animation:typing 3s steps(17) infinite;
+    background-color:black;
+}
+
+@keyframes typing{
+    40%,
+    60%{
+        left:calc(100%);
+    }
+    100%{
+        left:0;
+    }
+}
+/*----------------------------------TYPING-ANIMATION----------------------------------*/
