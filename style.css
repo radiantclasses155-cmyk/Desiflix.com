@@ -33,25 +33,21 @@
      display:flex;
      justify-items: auto;
     margin-left:16px;
-    text-decoration:none;
    font-size:35px;
-   font-weight: 800;
    background: transparent;
    text-decoration: none;
-   border-bottom:3px solid transparent;
-   transition : 3s ease;
+     border:8px solid transparent;
+  border-radius:3rem;
        cursor:pointer;
 }
 
-.logo a.red{
-   color:#b80b0b;
-   border-bottom:3px solid #b74b4b;
-}
 
-.logo a:hover{
-    color:silver;
-    border-bottom: 3px solid #b80b0b;
-  
+
+.logo:hover{
+    box-shadow:0 0 25px  #b74f4b;
+    background-color: #b74b4b;
+    color:rgb(18, 16, 4);
+    transition:0.3s ease;  
 }
 
 .top a {
