@@ -1,0 +1,52 @@
+
+  
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; background: #070707; color: #eee; line-height: 1.4; }
+
+  /* top bar */
+  .top {
+    position: fixed; top: 0; left: 0; right: 0; height: 64px;
+    background: #111; display:flex; align-items:center; padding: 0 16px; z-index: 50;
+  }
+  .logo { color: #e50914; font-weight:700; font-size:22px; margin-right:12px; }
+  .top a { color:#ddd; text-decoration:none; margin-right:12px; font-size:14px; }
+  .top a:hover { color:#fff; }
+
+  /* page layout */
+  .page { padding: 84px 16px 40px; max-width: 1100px; margin: 0 auto; }
+
+  /* hero (big banner) */
+  .hero {
+    background: #111; padding: 18px; border-radius:8px; margin-bottom:18px;
+  }
+  .hero h1 { color:#fff; font-size:22px; margin-bottom:8px; }
+  .hero p { color:#bbb; font-size:14px; margin-bottom:6px; }
+
+  /* vertical video list: each block full width stacked one after another */
+  .video-block {
+    background: #141414; border: 1px solid #222; border-radius:8px;
+    overflow: hidden; margin-bottom: 14px;
+  }
+  .thumb { width:100%; height:300px; background:#222 center/cover no-repeat; display:block; }
+  .info { padding:12px; }
+  .title { font-size:16px; color:#fff; margin-bottom:6px; }
+  .meta { color:#aaa; font-size:13px; margin-bottom:8px; }
+  .open { display:inline-block; background:#e50914; color:#fff; padding:8px 12px; text-decoration:none; border-radius:4px; font-weight:700; }
+
+  /* small screens */
+  @media (max-width:700px) {
+    .thumb { height:180px; }
+    .title { font-size:15px; }
+  }
+
+  /* modal (pure CSS using :target) */
+  .modal { display:none; position:fixed; inset:0; background: rgba(0,0,0,0.95); z-index:120; align-items:center; justify-content:center; padding:20px; }
+  .modal:target { display:flex; }
+  .modal .box { width:100%; max-width:1000px; background:#000; border-radius:6px; padding:10px; }
+  .modal iframe { width:100%; height:560px; border:0; background:#000; border-radius:4px; }
+  .close { display:block; text-align:right; margin-top:8px; }
+  .close a { color:#ddd; background:#111; padding:7px 12px; text-decoration:none; border-radius:4px; border:1px solid #333; }
+  .close a:hover { background:#222; color:#fff; }
+
+  /* optional small helper at bottom if audio autoplay blocked (no JS here) */
+  .note { color:#bbb; font-size:13px; margin-top:8px; }
