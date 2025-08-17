@@ -32,7 +32,7 @@
      font-weight:700;
      display:flex;
      justify-items: auto;
-    margin-right:12px;
+    margin-left:16px;
     text-decoration:none;
    font-size:35px;
    font-weight: 800;
@@ -83,7 +83,8 @@
 }
 
 .nav-ops a.red {
-    color: #630505;
+    font-size:18px;
+    font-weight:500;
     border-bottom: 3px solid #6c0606;
 }
 
