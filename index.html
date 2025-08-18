@@ -6,8 +6,10 @@
 <title>DesiFlix.com</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
+<div id="preloader"></div>
 
   <!-- BACKGROUND SONG: replace YALGAR_MP3_URL with your hosted mp3 file -->
   <audio autoplay loop>
@@ -54,21 +56,22 @@
 
     <!-- We'll generate 100 blocks. Example pattern uses a short set of IDs repeated. -->
     <!-- Block 1 -->
-    <div class="video-block">
-      <a class="thumb" href="#play1" style="background-image:url('https://img.youtube.com/vi/NcoPYOPryls/maxresdefault.jpg');"></a>
+      <div class="video-block">
+      <a class="thumb" href="#play1" style="background-image:url('thumbnail.jpg');"></a>
       <div class="info">
-        <div class="title">Mr Indian Hacker — 1000 Matches Experiment</div>
-        <div class="meta">Channel: Mr Indian Hacker • Experiment • 2023</div>
+        <div class="title">Anmol Singh Rathore (ASR) Google CEO — Goodbye To AI</div>
+        <div class="meta">Channel: JRS • Viral • 2050</div>
         <a class="open" href="#play1">▶ PLAY</a>
       </div>
     </div>
+    
 
     <!-- Block 2 -->
-    <div class="video-block">
-      <a class="thumb" href="#play2" style="background-image:url('thumbnail.jpg');"></a>
+   <div class="video-block">
+      <a class="thumb" href="#play2" style="background-image:url('https://img.youtube.com/vi/NcoPYOPryls/maxresdefault.jpg');"></a>
       <div class="info">
-        <div class="title">Anmol Singh Rajput (ASR) Google CEO — Goodbye To AI</div>
-        <div class="meta">Channel: JRS • Viral • 2050</div>
+        <div class="title">Mr Indian Hacker — 1000 Matches Experiment</div>
+        <div class="meta">Channel: Mr Indian Hacker • Experiment • 2023</div>
         <a class="open" href="#play2">▶ PLAY</a>
       </div>
     </div>
@@ -565,8 +568,8 @@
   <!-- MODALS 1..100 -->
   <!-- For each modal: iframe src uses the same set of sample IDs used above -->
   <!-- You can change the video ID in iframe src to any YouTube video you want -->
-  <div id="play1" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/NcoPYOPryls?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play2" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/1IxG7ywSNXk?si=Q9VAl7Yc-PxLzAia" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play2" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/NcoPYOPryls?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play1" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/1IxG7ywSNXk?si=Q9VAl7Yc-PxLzAia" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
   <div id="play3" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/5GiKwfaCjzY?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
   <div id="play4" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/qIPJic4pW1U?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
   <div id="play5" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/FHaISozKmvM?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
@@ -623,6 +626,15 @@
   <div id="play48" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/zzwRbKI2pn4?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
   <div id="play49" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/FmgCyz0mNeA?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
   <div id="play50" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/GW6f9KZ6wUQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+ 
+  <script>
 
+  var loader = document.getElementById("preloader");
+
+  window.addEventListener("load" , function() {
+      loader.style.display = "none";
+  })
+
+  </script>
 </body>
 </html>
