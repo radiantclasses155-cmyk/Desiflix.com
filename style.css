@@ -303,7 +303,7 @@
     width: 100%;
     border-left:2px solid #8fb74b;
     animation:typing 3s steps(17) infinite;
-    background-color:black;
+    background-color:#111;
 }
 
 @keyframes typing{
