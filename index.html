@@ -1,632 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>DesiFlix.com</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiFlix.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<div id="preloader"></div>
+    <div id="preloader"></div>
 
-  <!-- BACKGROUND SONG: replace YALGAR_MP3_URL with your hosted mp3 file -->
-  <audio autoplay loop>
-    <source src="YALGAR_MP3_URL" type="audio/mpeg">
-    <!-- If browser blocks autoplay, user must tap/press to start audio. -->
-  </audio>
 
-  <div class="top">
-    <div class="logo"><i class="fa-solid fa-baseball"></i>DesiFlix</div>
-    <div class="nav-ops">
-    <a href="#" class="red">Home</a>
-    <a href="#">Trending</a>
-    <a href="#">Subscriptions</a>
-    <a href="#">Library</a>
-    </div>
-    <div class="ops">
-      <a href="#">Login | NewUser</a>
-    </div>
-  </div>
-
-  <div class="page">
-
-    <!-- hero / featured -->
-    <div class="hero">
-      
-        <div class="wrapper">
-            <div class="static-txt">Featured - </div>
-            <ul class="dynamic-txts">
-                <li>Indian creators</li>
-                <li>News</li>
-                <li>Trending Videos</li>
-                <li>Creativity</li>
-                <li>Dedication</li>
-                <li> Skills</li>
-            </ul>
+    <div class="top">
+        <div class="logo"> <i class="fa-solid fa-baseball"></i>DesiFlix </div>
+        <div class="nav-ops">
+            <a href="#" class="red">Home</a>
+            <a href="#" >Trending</a>
+            <a href="#" >Subscription</a>
+            <a href="#" >Library</a>
+            <a href="#" ><i class="fa-solid fa-skull-crossbones"></i></a>
         </div>
-      <p>Click any "PLAY" button to open the video.</p>
-      
+        <div class="ops">
+            <a href="#">Login | NewUser</a>
+           
+        </div>
     </div>
 
-    <!-- VERTICAL LIST: 100 video blocks (IDs repeat to keep file small but playable) -->
-    <!-- Layout: thumbnail on top, title/meta below, PLAY button opens modal -->
-    <!-- You can replace the video IDs in href and modal iframe src to change videos -->
+    <div class="page">
+        
+        <div class="hero">
+            <div class="wrapper">
+                <div class="static-txt">Featured - </div>
+                <ul class="dynamic-txts">
+                    <li>Indian Creators</li>
+                    <li>Trending Videos</li>
+                    <li>News</li>
+                    <li>Creativity</li>
+                    <li>Skills</li>
+                    <li>Dedication</li>
+                </ul>
+            </div>
+            <p>Click any "PLAY" button to open the video</p>
+        </div>
 
-    <!-- We'll generate 100 blocks. Example pattern uses a short set of IDs repeated. -->
-    <!-- Block 1 -->
-      <div class="video-block">
-      <a class="thumb" href="#play1" style="background-image:url('thumbnail.jpg');"></a>
-      <div class="info">
-        <div class="title">Anmol Singh Rathore (ASR) Google CEO — Goodbye To AI</div>
-        <div class="meta">Channel: JRS • Viral • 2050</div>
-        <a class="open" href="#play1">▶ PLAY</a>
-      </div>
-    </div>
-    
 
-    <!-- Block 2 -->
-   <div class="video-block">
-      <a class="thumb" href="#play2" style="background-image:url('https://img.youtube.com/vi/NcoPYOPryls/maxresdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Mr Indian Hacker — 1000 Matches Experiment</div>
-        <div class="meta">Channel: Mr Indian Hacker • Experiment • 2023</div>
-        <a class="open" href="#play2">▶ PLAY</a>
-      </div>
-    </div>
+        <!-- Block 1 -->
 
-    <!-- Block 3 -->
-    <div class="video-block">
-      <a class="thumb" href="#play3" style="background-image:url('https://img.youtube.com/vi/5GiKwfaCjzY/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Mr Indian Hacker — Jet Engine Build</div>
-        <div class="meta">Channel: Mr Indian Hacker • Engineering • 2021</div>
-        <a class="open" href="#play3">▶ PLAY</a>
-      </div>
-    </div>
+        <div class="video-block">
+            <a href="#play1" class="thumb" style="background-image: url('thumbnail/thumbnail.jpg');"> </a>
+           <div class="info">
+            <div class="title">Anmol Singh Rathore (ASR) Google CEO — Goodbye To AI</div>
+            <div class="meta">Channel: JRS • Viral • 2050</div>
+            <a class="open" href="#play1">&#9654; PLAY</a>
+           </div>
+        </div>
 
-    <!-- Block 4 -->
-    <div class="video-block">
-      <a class="thumb" href="#play4" style="background-image:url('https://img.youtube.com/vi/qIPJic4pW1U/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Mr Indian Hacker — Car Rocket Challenge</div>
-        <div class="meta">Channel: Mr Indian Hacker • Stunt • 2020</div>
-        <a class="open" href="#play4">▶ PLAY</a>
-      </div>
-    </div>
+        <!-- Block 2 -->
 
-    <!-- Block 5 -->
-    <div class="video-block">
-      <a class="thumb" href="#play5" style="background-image:url('https://img.youtube.com/vi/FHaISozKmvM/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Mr Indian Hacker — Powerful Egg Trick</div>
-        <div class="meta">Channel: Mr Indian Hacker • Fun • 2022</div>
-        <a class="open" href="#play5">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 6 -->
-    <div class="video-block">
-      <a class="thumb" href="#play6" style="background-image:url('https://img.youtube.com/vi/WEkSYw3o5is/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Tech Review — Quick Phone Test</div>
-        <div class="meta">Channel: Tech • Review • 2024</div>
-        <a class="open" href="#play6">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 7 -->
-    <div class="video-block">
-      <a class="thumb" href="#play7" style="background-image:url('https://img.youtube.com/vi/hx0Jz8W2tZw/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Gadget Unboxing — New Launch</div>
-        <div class="meta">Channel: TechBurner / Guruji • 2023</div>
-        <a class="open" href="#play7">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 8 -->
-    <div class="video-block">
-      <a class="thumb" href="#play8" style="background-image:url('https://img.youtube.com/vi/NTJrO4Shx8s/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Dev Talk — Chrome Dev Summit</div>
-        <div class="meta">Channel: Google Dev • Conference • 2020</div>
-        <a class="open" href="#play8">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 9 -->
-    <div class="video-block">
-      <a class="thumb" href="#play9" style="background-image:url('https://img.youtube.com/vi/6h3tR4kKX3k/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">CarryMinati — Roast Clip</div>
-        <div class="meta">Channel: CarryMinati • Entertainment</div>
-        <a class="open" href="#play9">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 10 -->
-    <div class="video-block">
-      <a class="thumb" href="#play10" style="background-image:url('https://img.youtube.com/vi/4F0X1u2Yw8g/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">BB Ki Vines — Funny Sketch</div>
-        <div class="meta">Channel: BB Ki Vines • Comedy</div>
-        <a class="open" href="#play10">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Blocks 11..100: repeating video IDs (you can change each ID easily) -->
-    <!-- For brevity I repeat the same pattern and cycle through a set of IDs -->
-    <!-- Block 11 -->
-    <div class="video-block">
-      <a class="thumb" href="#play11" style="background-image:url('https://img.youtube.com/vi/ewJth08cWzk/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Tech Talk — Gadget Tips</div>
-        <div class="meta">Channel: Tech • 2021</div>
-        <a class="open" href="#play11">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 12 -->
-    <div class="video-block">
-      <a class="thumb" href="#play12" style="background-image:url('https://img.youtube.com/vi/VtLThco8lY0/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Camera Test — Review</div>
-        <div class="meta">Channel: Technical Guruji</div>
-        <a class="open" href="#play12">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 13 -->
-    <div class="video-block">
-      <a class="thumb" href="#play13" style="background-image:url('https://img.youtube.com/vi/1V4A7zjhFHU/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">News Clip — Aaj Tak</div>
-        <div class="meta">Channel: Aaj Tak</div>
-        <a class="open" href="#play13">▶ PLAY</a>
-      </div>
+        <div class="video-block">
+            <a href="#play2" class="thumb" style="background-image: url('thumbnail/thumbnail2.jpg');"> </a>
+           <div class="info">
+            <div class="title"></div>
+            <div class="meta">Channel: JRS • Viral • 2050</div>
+            <a class="open" href="#play2">&#9654; PLAY</a>
+           </div>
+        </div>
+        
+        <!-- Block 3 -->
+        
+        <div class="video-block">
+                    <a href="#play3" class="thumb" style="background-image: url('thumbnail/thumbnail3.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play3" class="open">&#9654; PLAY</a>
+                   </div>
+         </div>
+         
+         <!-- Block 4 -->
+        
+                <div class="video-block">
+                    <a href="#play4" class="thumb" style="background-image: url('thumbnail/thumbnail4.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play4" class="open">&#9654; PLAY</a>
+                   </div>
+                </div>
+                <!-- Block 5 -->
+        
+                <div class="video-block">
+                    <a href="#play5" class="thumb" style="background-image: url('thumbnail/thumbnail5.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play5" class="open">&#9654; PLAY</a>
+                   </div>
+                </div>
+                <!-- Block 6 -->
+        
+                <div class="video-block">
+                    <a href="#play6" class="thumb" style="background-image: url('thumbnail/thumbnail6.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play6" class="open">&#9654; PLAY</a>
+                   </div>
+                </div>
+                <!-- Block 7 -->
+        
+                <div class="video-block">
+                    <a href="#play7" class="thumb" style="background-image: url('thumbnail/thumbnail7.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play7" class="open">&#9654; PLAY</a>
+                   </div>
+                </div>
+                <!-- Block 8 -->
+        
+                <div class="video-block">
+                    <a href="#play8" class="thumb" style="background-image: url('thumbnail/thumbnail8.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play8" class="open">&#9654; PLAY</a>
+                   </div>
+                </div>
+                <!-- Block 9 -->
+        
+                <div class="video-block">
+                    <a href="#play9" class="thumb" style="background-image: url('thumbnail/thumbnail9.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play9" class="open">&#9654; PLAY</a>
+                   </div>
+                </div>
+                <!-- Block 10 -->
+        
+                <div class="video-block">
+                    <a href="#play10" class="thumb" style="background-image: url('thumbnail/thumbnail10.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a href="#play10" class="open">&#9654; PLAY</a>
+                   </div>
+                </div>
+                
+                <!-- Block 11 -->
+        
+                <div class="video-block">
+                    <a class="thumb" href="#play11"  style="background-image: url('thumbnail/thumbnail11.jpg');"> </a>
+                   <div class="info">
+                    <div class="title"></div>
+                    <div class="meta">Channel: JRS • Viral • 2050</div>
+                    <a class="open" href="#play11"> &#9654; PLAY </a>
+                   </div>
+                </div>
+               
     </div>
 
-    <!-- Block 14 -->
-    <div class="video-block">
-      <a class="thumb" href="#play14" style="background-image:url('https://img.youtube.com/vi/9Auq9mYxFEE/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">NDTV — Prime Time</div>
-        <div class="meta">Channel: NDTV India</div>
-        <a class="open" href="#play14">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 15 -->
-    <div class="video-block">
-      <a class="thumb" href="#play15" style="background-image:url('https://img.youtube.com/vi/YE7VzlLtp-4/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Short Film — Sample</div>
-        <div class="meta">Channel: Blender • Short</div>
-        <a class="open" href="#play15">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 16 -->
-    <div class="video-block">
-      <a class="thumb" href="#play16" style="background-image:url('https://img.youtube.com/vi/sBws8MSXN7A/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Dev Summit Talk — Google</div>
-        <div class="meta">Channel: Google Dev</div>
-        <a class="open" href="#play16">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 17 -->
-    <div class="video-block">
-      <a class="thumb" href="#play17" style="background-image:url('https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">W3Schools Demo — Learning</div>
-        <div class="meta">Channel: W3Schools</div>
-        <a class="open" href="#play17">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 18 -->
-    <div class="video-block">
-      <a class="thumb" href="#play18" style="background-image:url('https://img.youtube.com/vi/zzwRbKI2pn4/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">CarryMinati — Yalgaar Clip</div>
-        <div class="meta">Channel: CarryMinati</div>
-        <a class="open" href="#play18">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 19 -->
-    <div class="video-block">
-      <a class="thumb" href="#play19" style="background-image:url('https://img.youtube.com/vi/FmgCyz0mNeA/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Music — Popular Clip</div>
-        <div class="meta">Channel: Music</div>
-        <a class="open" href="#play19">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 20 -->
-    <div class="video-block">
-      <a class="thumb" href="#play20" style="background-image:url('https://img.youtube.com/vi/GW6f9KZ6wUQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Entertainment Clip</div>
-        <div class="meta">Channel: Creator</div>
-        <a class="open" href="#play20">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 21 -->
-    <div class="video-block">
-      <a class="thumb" href="#play21" style="background-image:url('https://img.youtube.com/vi/0dB8Guqk0DQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Sketch Comedy</div>
-        <div class="meta">Channel: Comedy</div>
-        <a class="open" href="#play21">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 22 -->
-    <div class="video-block">
-      <a class="thumb" href="#play22" style="background-image:url('https://img.youtube.com/vi/kY0ZZguYcLc/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Hit Song — Clip</div>
-        <div class="meta">Channel: Music</div>
-        <a class="open" href="#play22">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 23 -->
-    <div class="video-block">
-      <a class="thumb" href="#play23" style="background-image:url('https://img.youtube.com/vi/XC8awRjMdEI/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Bollywood Music — T-Series</div>
-        <div class="meta">Channel: T-Series</div>
-        <a class="open" href="#play23">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 24 -->
-    <div class="video-block">
-      <a class="thumb" href="#play24" style="background-image:url('https://img.youtube.com/vi/3JZ4pnNtyxQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Pop Hit</div>
-        <div class="meta">Channel: Music</div>
-        <a class="open" href="#play24">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 25 -->
-    <div class="video-block">
-      <a class="thumb" href="#play25" style="background-image:url('https://img.youtube.com/vi/fRh_vgS2dFE/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Dance Track — Remix</div>
-        <div class="meta">Channel: Music</div>
-        <a class="open" href="#play25">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 26 -->
-    <div class="video-block">
-      <a class="thumb" href="#play26" style="background-image:url('https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Classic Hit (Rickroll)</div>
-        <div class="meta">Channel: Music</div>
-        <a class="open" href="#play26">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 27 -->
-    <div class="video-block">
-      <a class="thumb" href="#play27" style="background-image:url('https://img.youtube.com/vi/9bZkp7q19f0/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Gangnam Style — Popular</div>
-        <div class="meta">Channel: PSY</div>
-        <a class="open" href="#play27">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 28 -->
-    <div class="video-block">
-      <a class="thumb" href="#play28" style="background-image:url('https://img.youtube.com/vi/hY7m5jjJ9mM/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Cute Cats Compilation</div>
-        <div class="meta">Channel: CuteCats</div>
-        <a class="open" href="#play28">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 29 -->
-    <div class="video-block">
-      <a class="thumb" href="#play29" style="background-image:url('https://img.youtube.com/vi/YE7VzlLtp-4/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Sample Short Film</div>
-        <div class="meta">Channel: Blender</div>
-        <a class="open" href="#play29">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 30 -->
-    <div class="video-block">
-      <a class="thumb" href="#play30" style="background-image:url('https://img.youtube.com/vi/sBws8MSXN7A/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Developer Summit Talk</div>
-        <div class="meta">Channel: Google Dev</div>
-        <a class="open" href="#play30">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- BLOCKS 31..100: repeating cycle of IDs and titles (easy to edit later) -->
-    <!-- I will repeat a pattern so you have 100 stacked blocks total -->
-    <!-- For quick editing: change the href "#playX" and thumbnail URL / modal src to your desired video -->
-
-    <!-- Block 31 -->
-    <div class="video-block">
-      <a class="thumb" href="#play31" style="background-image:url('https://img.youtube.com/vi/NcoPYOPryls/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Experiment — Big Match Setup</div>
-        <div class="meta">Mr Indian Hacker</div>
-        <a class="open" href="#play31">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 32 -->
-    <div class="video-block">
-      <a class="thumb" href="#play32" style="background-image:url('https://img.youtube.com/vi/KAdqsdZM_BQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Experiment — Match Art</div>
-        <div class="meta">Mr Indian Hacker</div>
-        <a class="open" href="#play32">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 33 -->
-    <div class="video-block">
-      <a class="thumb" href="#play33" style="background-image:url('https://img.youtube.com/vi/5GiKwfaCjzY/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Jet Build — DIY</div>
-        <div class="meta">Mr Indian Hacker</div>
-        <a class="open" href="#play33">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 34 -->
-    <div class="video-block">
-      <a class="thumb" href="#play34" style="background-image:url('https://img.youtube.com/vi/qIPJic4pW1U/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Rockets From Car — Stunt</div>
-        <div class="meta">Mr Indian Hacker</div>
-        <a class="open" href="#play34">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 35 -->
-    <div class="video-block">
-      <a class="thumb" href="#play35" style="background-image:url('https://img.youtube.com/vi/FHaISozKmvM/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Power Egg — Demo</div>
-        <div class="meta">Mr Indian Hacker</div>
-        <a class="open" href="#play35">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 36 -->
-    <div class="video-block">
-      <a class="thumb" href="#play36" style="background-image:url('https://img.youtube.com/vi/WEkSYw3o5is/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Phone Tips — Quick</div>
-        <div class="meta">Tech Channel</div>
-        <a class="open" href="#play36">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 37 -->
-    <div class="video-block">
-      <a class="thumb" href="#play37" style="background-image:url('https://img.youtube.com/vi/hx0Jz8W2tZw/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Car Stunt — Short</div>
-        <div class="meta">Creator</div>
-        <a class="open" href="#play37">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 38 -->
-    <div class="video-block">
-      <a class="thumb" href="#play38" style="background-image:url('https://img.youtube.com/vi/NTJrO4Shx8s/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Washing Machine Blast</div>
-        <div class="meta">Experiment</div>
-        <a class="open" href="#play38">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 39 -->
-    <div class="video-block">
-      <a class="thumb" href="#play39" style="background-image:url('https://img.youtube.com/vi/6h3tR4kKX3k/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Carry Clip — Funny</div>
-        <div class="meta">CarryMinati</div>
-        <a class="open" href="#play39">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 40 -->
-    <div class="video-block">
-      <a class="thumb" href="#play40" style="background-image:url('https://img.youtube.com/vi/4F0X1u2Yw8g/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">BB Ki Vines — Scene</div>
-        <div class="meta">Comedy</div>
-        <a class="open" href="#play40">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 41 -->
-    <div class="video-block">
-      <a class="thumb" href="#play41" style="background-image:url('https://img.youtube.com/vi/ewJth08cWzk/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Gadget Unbox</div>
-        <div class="meta">Tech</div>
-        <a class="open" href="#play41">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 42 -->
-    <div class="video-block">
-      <a class="thumb" href="#play42" style="background-image:url('https://img.youtube.com/vi/VtLThco8lY0/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Camera Review</div>
-        <div class="meta">Reviews</div>
-        <a class="open" href="#play42">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 43 -->
-    <div class="video-block">
-      <a class="thumb" href="#play43" style="background-image:url('https://img.youtube.com/vi/1V4A7zjhFHU/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">News Highlight</div>
-        <div class="meta">News Channel</div>
-        <a class="open" href="#play43">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 44 -->
-    <div class="video-block">
-      <a class="thumb" href="#play44" style="background-image:url('https://img.youtube.com/vi/9Auq9mYxFEE/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Talk Show Clip</div>
-        <div class="meta">News</div>
-        <a class="open" href="#play44">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 45 -->
-    <div class="video-block">
-      <a class="thumb" href="#play45" style="background-image:url('https://img.youtube.com/vi/YE7VzlLtp-4/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Short Animation</div>
-        <div class="meta">Short Film</div>
-        <a class="open" href="#play45">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 46 -->
-    <div class="video-block">
-      <a class="thumb" href="#play46" style="background-image:url('https://img.youtube.com/vi/sBws8MSXN7A/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Conference Talk</div>
-        <div class="meta">Tech</div>
-        <a class="open" href="#play46">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 47 -->
-    <div class="video-block">
-      <a class="thumb" href="#play47" style="background-image:url('https://img.youtube.com/vi/aqz-KE-bpKQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Demo Video</div>
-        <div class="meta">Tutorial</div>
-        <a class="open" href="#play47">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 48 -->
-    <div class="video-block">
-      <a class="thumb" href="#play48" style="background-image:url('https://img.youtube.com/vi/zzwRbKI2pn4/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Carry — Music Clip</div>
-        <div class="meta">CarryMinati</div>
-        <a class="open" href="#play48">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 49 -->
-    <div class="video-block">
-      <a class="thumb" href="#play49" style="background-image:url('https://img.youtube.com/vi/FmgCyz0mNeA/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Music Video</div>
-        <div class="meta">Song</div>
-        <a class="open" href="#play49">▶ PLAY</a>
-      </div>
-    </div>
-
-    <!-- Block 50 -->
-    <div class="video-block">
-      <a class="thumb" href="#play50" style="background-image:url('https://img.youtube.com/vi/GW6f9KZ6wUQ/hqdefault.jpg');"></a>
-      <div class="info">
-        <div class="title">Entertainment Clip</div>
-        <div class="meta">Creator</div>
-        <a class="open" href="#play50">▶ PLAY</a>
-      </div>
-    </div>
-
-    
-  </div> <!-- end page -->
-
-  <!-- MODALS 1..100 -->
-  <!-- For each modal: iframe src uses the same set of sample IDs used above -->
-  <!-- You can change the video ID in iframe src to any YouTube video you want -->
-  <div id="play2" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/NcoPYOPryls?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
   <div id="play1" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/1IxG7ywSNXk?si=Q9VAl7Yc-PxLzAia" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play3" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/5GiKwfaCjzY?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play4" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/qIPJic4pW1U?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play5" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/FHaISozKmvM?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play6" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/WEkSYw3o5is?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play7" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/hx0Jz8W2tZw?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play8" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/NTJrO4Shx8s?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play9" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/6h3tR4kKX3k?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play10" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/4F0X1u2Yw8g?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-
-  <div id="play11" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/ewJth08cWzk?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play12" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/VtLThco8lY0?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play13" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/1V4A7zjhFHU?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play14" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/9Auq9mYxFEE?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play15" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/YE7VzlLtp-4?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play16" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/sBws8MSXN7A?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play17" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play18" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/zzwRbKI2pn4?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play19" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/FmgCyz0mNeA?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play20" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/GW6f9KZ6wUQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-
-  <div id="play21" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/0dB8Guqk0DQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play22" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/kY0ZZguYcLc?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play23" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/XC8awRjMdEI?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play24" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/3JZ4pnNtyxQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play25" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/fRh_vgS2dFE?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-
-  <div id="play26" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play27" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/9bZkp7q19f0?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play28" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/hY7m5jjJ9mM?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play29" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/YE7VzlLtp-4?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play30" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/sBws8MSXN7A?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-
-  <!-- play31..play100: repeat / cycle same IDs to keep file simple -->
-  <div id="play31" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/NcoPYOPryls?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play32" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/KAdqsdZM_BQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play33" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/5GiKwfaCjzY?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play34" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/qIPJic4pW1U?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play35" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/FHaISozKmvM?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-
-  <div id="play36" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/WEkSYw3o5is?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play37" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/hx0Jz8W2tZw?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play38" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/NTJrO4Shx8s?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play39" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/6h3tR4kKX3k?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play40" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/4F0X1u2Yw8g?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-
-  <div id="play41" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/ewJth08cWzk?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play42" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/VtLThco8lY0?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play43" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/1V4A7zjhFHU?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play44" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/9Auq9mYxFEE?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play45" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/YE7VzlLtp-4?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-
-  <div id="play46" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/sBws8MSXN7A?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play47" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play48" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/zzwRbKI2pn4?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play49" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/FmgCyz0mNeA?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
-  <div id="play50" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/GW6f9KZ6wUQ?rel=0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
- 
+  <div id="play2" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/zzwRbKI2pn4?si=kWsrBuepLLhWh1tR" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play3" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/7mFvyrNHZRY?si=4vS59Pt_OXCf_65B" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play4" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/jzD_yyEcp0M?si=frHU7kWVpQ46jtGc" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play5" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/8CX_Pr-DlL0?si=Slz3io6dBiCjK9Pe" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play6" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/jFGKJBPFdUA?si=uC7yNSV9uyrjJ1rj" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play7" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/l6BChpns5w8?si=YgwlLhQN1gHE1T6X" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play8" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/465iEeNOEBg?si=BQcNcM2VK8m_a_qx" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play9" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/V-maA961SDE?si=LH25YosoMtVn2uO0" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play10" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/KZeIEiBrT_w?si=rcgP1xymo8J4MPOh" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+  <div id="play11" class="modal"><div class="box"><iframe src="https://www.youtube.com/embed/n_u_yTZ22fg?si=HnnKCOfPSI3-ZtcP" allowfullscreen></iframe><div class="close"><a href="#">Close</a></div></div></div>
+      
   <script>
 
   var loader = document.getElementById("preloader");
@@ -636,5 +182,6 @@
   })
 
   </script>
+
 </body>
 </html>
